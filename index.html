@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Website</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('src/background.jpg'); /* 设置背景图片，替换为您的图片路径 */
+        background-size: cover; /* 讓背景圖片自動調整大小以填充容器 */
+        background-repeat: no-repeat; /* 防止背景圖片重複 */
+        background-position: center center; /* 背景圖片居中顯示 */
+        background-attachment: fixed; /* 背景圖片固定，不隨著頁面滾動而移動 */
+        height: 100vh; /* 使頁面高度與瀏覽器窗口高度相同 */
+        overflow-y: scroll; /* 允許頁面內容超出瀏覽器窗口時進行滾動 */
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5); /* 半透明的白色覆盖层 */
+    }
+    .content {
+        position: relative;
+        background-color: #ffffff; /* 白色背景 */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加一个小的阴影效果 */
+        margin: 20px auto; /* 上下边距20px，左右自动调整以使内容居中 */
+        padding: 20px; /* 内边距20px */
+        max-width: 800px; /* 最大宽度800px */
+        border-radius: 8px; /* 圆角 */
+        z-index: 1; /* 设置 z-index 以确保内容在覆盖层之上 */
+    }
+    p {
+        line-height: 1.6; /* 行间距 */
+        color: #333; /* 深灰色文字 */
+        margin: 0 0 20px; /* 下边距20px */
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif; /* 使用Roboto字體 */
+    }
+
+    .content-box {
+        background-color: rgba(255, 255, 255, 0.8); /* 半透明的白色背景 */
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .content-box p {
+        color: #333; /* 深灰色文字顏色，以增加對比度且在白色背景下依然清晰 */
+    }
+</style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- 添加半透明覆盖层 -->
+    <div class="content">
+        <p>Our ticket booking app is designed for travelers who seek a fast and convenient way to book their trips, allowing you to easily complete your itinerary reservation in just a few steps.</p>
+        <p>Not only that, but we also offer personalized package recommendations to meet your individual needs, making your journey even more perfect.</p>
+        <p>Choose us, and let your journey be filled with joy and convenience, enjoying a worry-free holiday time.</p>
+        
+        <button id="downloadButton">Try it now</button>
+    </div>
+
+
+   
+   <script>
+      document.getElementById('downloadButton').addEventListener('click', function() {
+          //window.location.href = 'src/Derek_meditate.jpg';
+          window.location.href = 'https://katesu.github.io/travelapp/app-release.apk';
+      });
+      </script>
+</body>
+</html>
