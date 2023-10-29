@@ -48,8 +48,31 @@
       })();
     </script>
     <!-- End Matomo Code -->
+    <!-- Matomo Tag Manager -->
+    <script>
+      var _mtm = (window._mtm = window._mtm || []);
+      _mtm.push({ 'mtm.startTime': new Date().getTime(), event: 'mtm.Start' });
+      (function () {
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src =
+          'https://cdn.matomo.cloud/99tcu5142390.matomo.cloud/container_wTviIymH.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Tag Manager -->
   </head>
   <body class="overflow-x-hidden">
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v18.0"
+      nonce="BfZFjRFn"
+    ></script>
     <nav class="bg-transparent fixed w-full">
       <div class="hidden md-flex justify-between p-6">
         <h1><b>Mobius Travel</b></h1>
@@ -64,7 +87,7 @@
         <div>
           <a
             href="./app-release.apk"
-            onclick="_paq.push({'event':'AppDownload'});"
+            onclick="_paq.push(['trackEvent', 'Button', 'Click', 'AppDownload']);"
             class="text-white"
             >下載 Android APP</a
           >
@@ -83,7 +106,7 @@
           <a
             href="./app-release.apk"
             class="rounded-full py-3 px-4 border-2 border-white border-solid"
-            onclick="_paq.push({'event':'AppDownload'});"
+            onclick="_paq.push(['trackEvent', 'Button', 'Click', 'AppDownload']);"
             >下載 Android APP</a
           >
         </div>
@@ -94,7 +117,7 @@
           不要錯過這兩個精彩的歐洲之旅，探索法國聖米歇爾山和德國新天鵝堡的壯麗之美！
         </div>
         <div class="md-flex">
-          <div class="w-[40%]">
+          <div class="md-w-[40%]">
             <img
               src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/13224115/178046_955428.jpeg"
               alt="broken image"
@@ -115,15 +138,8 @@
             </div>
           </div>
         </div>
-        <div class="md-flex">
-          <div class="flex flex-col justify-center p-5 md-p-20 bg-slate-200">
-            <div class="text-3xl">發現新天鵝堡</div>
-            <div class="py-4">
-              為您提供了方便快捷的新天鵝堡門票購買服務。您可以在我們的平台上輕鬆預訂新天鵝堡的門票，無需繁瑣的購票流程，讓您更好地享受您的旅程。
-            </div>
-            <div>訂購內容含新天鵝門票乙張，德國慕尼黑到新天鵝堡單人交通票</div>
-          </div>
-          <div class="w-[40%]">
+        <div class="md-flex md-flex-row-reverse">
+          <div class="md-w-[40%]">
             <img
               src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/13224115/497988_26017.jpeg"
               alt="broken image"
@@ -133,14 +149,21 @@
               data-image-link="javascript:void(0);"
             />
           </div>
+          <div class="flex flex-col justify-center p-5 md-p-20 bg-slate-200">
+            <div class="text-3xl">發現新天鵝堡</div>
+            <div class="py-4">
+              為您提供了方便快捷的新天鵝堡門票購買服務。您可以在我們的平台上輕鬆預訂新天鵝堡的門票，無需繁瑣的購票流程，讓您更好地享受您的旅程。
+            </div>
+            <div>訂購內容含新天鵝門票乙張，德國慕尼黑到新天鵝堡單人交通票</div>
+          </div>
         </div>
       </section>
 
       <section class="text-center pt-30">
         <div class="text-4xl">Mobius Travel</div>
         <div class="text-xl py-3">您的歐洲冒險之門</div>
-        <div class="container flex">
-          <div class="w-[50%]">
+        <div class="container md-flex">
+          <div class="md-w-[50%]">
             <div class="">
               <img
                 alt="broken image"
@@ -162,7 +185,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[50%]">
+          <div class="md-w-[50%]">
             <div class="">
               <img
                 alt="broken image"
@@ -187,6 +210,21 @@
         </div>
       </section>
     </main>
+    <div class="fixed z-100 bottom-10 right-10">
+      <div
+        class="fb-share-button"
+        data-href="https://mobiustravel.ddns.net/"
+        data-layout="button_count"
+        data-size="large"
+      >
+        <a
+          target="_blank"
+          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmobiustravel.ddns.net%2F&amp;src=sdkpreparse"
+          class="fb-xfbml-parse-ignore"
+          >分享</a
+        >
+      </div>
+    </div>
   </body>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
