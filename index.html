@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="./src/favicon.ico">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css"
@@ -74,8 +75,8 @@
       nonce="BfZFjRFn"
     ></script>
     <nav class="bg-transparent fixed w-full">
-      <div class="hidden md-flex justify-between p-6">
-        <h1><b>Mobius Travel</b></h1>
+      <div class="hidden md-flex justify-between items-center p-6">
+        <h1><img class="w-13 h-auto inline-block pr-2" src="./src/icon-192.png"/><b>Mobius Travel</b></h1>
         <ul class="flex gap-3 text-white">
           <li>主頁</li>
           <li>售票服務</li>
@@ -94,7 +95,7 @@
         </div>
       </div>
     </nav>
-    <main class="container">
+    <main class="">
       <section
         class="slide1 w-screen h-screen text-center text-white flex flex-col justify-center"
       >
@@ -105,110 +106,123 @@
           </div>
           <a
             href="./app-release.apk"
-            class="rounded-full py-3 px-4 border-2 border-white border-solid"
+            class="rounded-full py-3 px-4 border-3 border-white border-solid"
             onclick="_paq.push(['trackEvent', 'Button', 'Click', 'AppDownload']);"
-            >下載 Android APP</a
+            ><strong>下載 Android APP</strong></a
           >
         </div>
       </section>
-      <section class="text-center pt-30">
-        <div class="text-4xl">售票服務</div>
-        <div class="text-xl py-3">
-          不要錯過這兩個精彩的歐洲之旅，探索法國聖米歇爾山和德國新天鵝堡的壯麗之美！
-        </div>
-        <div class="md-flex">
-          <div class="md-w-[40%]">
-            <img
-              src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/13224115/178046_955428.jpeg"
-              alt="broken image"
-              title=""
-              class="crop-default"
-              data-description=""
-              data-image-link="javascript:void(0);"
-            />
-          </div>
-          <div class="flex flex-col justify-center p-5 md-p-20 bg-slate-200">
-            <div class="text-3xl">探索聖米歇爾山</div>
-            <div class="py-4">
-              為您呈現 "探索歐洲"
-              套裝行程，其中包括法國聖米歇爾山的門票和交通安排。從令人驚嘆的海濱城市到宗教古蹟，您將暢遊聖米歇爾山的美麗風光。
+      <div class="flex flex-col items-center">
+        <div class="container">
+          <section class="text-center pt-30">
+            <div class="text-4xl">售票服務</div>
+            <div class="text-xl py-3">
+              不要錯過這兩個精彩的歐洲之旅，探索法國聖米歇爾山和德國新天鵝堡的壯麗之美！
             </div>
-            <div>
-              訂購內容含聖米歇爾門票乙張， 巴黎蒙帕納斯到聖米歇爾山單人交通票
+            <div class="md-flex">
+              <div class="">
+                <img
+                  src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/13224115/178046_955428.jpeg"
+                  alt="broken image"
+                  title=""
+                  class="h-full w-auto"
+                  data-image-link="javascript:void(0);"
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center p-5 md-p-20 bg-slate-200 md-w-[70%]"
+              >
+                <div class="text-3xl">探索聖米歇爾山</div>
+                <div class="py-4">
+                  為您呈現 "探索歐洲"
+                  套裝行程，其中包括法國聖米歇爾山的門票和交通安排。從令人驚嘆的海濱城市到宗教古蹟，您將暢遊聖米歇爾山的美麗風光。
+                </div>
+                <div>
+                  訂購內容含聖米歇爾門票乙張，
+                  巴黎蒙帕納斯到聖米歇爾山單人交通票
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="md-flex md-flex-row-reverse">
-          <div class="md-w-[40%]">
-            <img
-              src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/13224115/497988_26017.jpeg"
-              alt="broken image"
-              title=""
-              class="crop-default"
-              data-description=""
-              data-image-link="javascript:void(0);"
-            />
-          </div>
-          <div class="flex flex-col justify-center p-5 md-p-20 bg-slate-200">
-            <div class="text-3xl">發現新天鵝堡</div>
-            <div class="py-4">
-              為您提供了方便快捷的新天鵝堡門票購買服務。您可以在我們的平台上輕鬆預訂新天鵝堡的門票，無需繁瑣的購票流程，讓您更好地享受您的旅程。
+            <div class="md-flex md-flex-row-reverse">
+              <div class="md-w-[40%]">
+                <img
+                  src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/13224115/497988_26017.jpeg"
+                  alt="broken image"
+                  title=""
+                  class="h-full w-auto"
+                  data-image-link="javascript:void(0);"
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center p-5 md-p-20 bg-slate-200 md-w-[70%]"
+              >
+                <div class="text-3xl">發現新天鵝堡</div>
+                <div class="py-4">
+                  為您提供了方便快捷的新天鵝堡門票購買服務。您可以在我們的平台上輕鬆預訂新天鵝堡的門票，無需繁瑣的購票流程，讓您更好地享受您的旅程。
+                </div>
+                <div>
+                  訂購內容含新天鵝門票乙張，德國慕尼黑到新天鵝堡單人交通票
+                </div>
+              </div>
             </div>
-            <div>訂購內容含新天鵝門票乙張，德國慕尼黑到新天鵝堡單人交通票</div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <section class="text-center pt-30">
-        <div class="text-4xl">Mobius Travel</div>
-        <div class="text-xl py-3">您的歐洲冒險之門</div>
-        <div class="container md-flex">
-          <div class="md-w-[50%]">
-            <div class="">
-              <img
-                alt="broken image"
-                title=""
-                class="crop-default lazyloaded"
-                data-description=""
-                data-image-link="javascript:void(0);"
-                width="1200"
-                height="1200"
-                src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/32149_267064.png"
-                data-src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/32149_267064.png"
-              />
-            </div>
-            <div class="flex flex-col justify-center p-5 md-p-20 bg-slate-200">
-              <div class="text-3xl">一站式旅遊體驗</div>
-              <div class="py-4">
-                Mobius Travel
-                為您提供了完美的歐洲之旅。我們的套裝行程包括法國聖米歇爾山的門票和交通，以及德國新天鵝堡的門票和交通，讓您無需煩惱購票和交通安排。一切都在一個套裝中，讓您輕松暢遊歐洲之美。
+          <section class="text-center pt-30">
+            <div class="text-4xl">Mobius Travel</div>
+            <div class="text-xl py-3">您的歐洲冒險之門</div>
+            <div class="md-flex">
+              <div class="md-w-1/2">
+                <div class="">
+                  <img
+                    alt="broken image"
+                    title=""
+                    class="crop-default lazyloaded"
+                    data-description=""
+                    data-image-link="javascript:void(0);"
+                    width="1200"
+                    height="1200"
+                    src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/32149_267064.png"
+                    data-src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/32149_267064.png"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center p-5 md-p-20"
+                >
+                  <div class="text-3xl">一站式旅遊體驗</div>
+                  <div class="py-4">
+                    Mobius Travel
+                    為您提供了完美的歐洲之旅。我們的套裝行程包括法國聖米歇爾山的門票和交通，以及德國新天鵝堡的門票和交通，讓您無需煩惱購票和交通安排。一切都在一個套裝中，讓您輕松暢遊歐洲之美。
+                  </div>
+                </div>
+              </div>
+              <div class="md-w-1/2">
+                <div class="">
+                  <img
+                    alt="broken image"
+                    title=""
+                    class="crop-default lazyloaded"
+                    data-description=""
+                    data-image-link="javascript:void(0);"
+                    width="801"
+                    height="801"
+                    src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/172126_75537.png"
+                    data-src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/172126_75537.png"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center p-5 md-p-20"
+                >
+                  <div class="text-3xl">歐洲之美盡收眼底</div>
+                  <div class="py-4">
+                    Mobius Travel
+                    的套裝行程讓您盡情探索歐洲之美。從法國的沿海小鎮到德國的童話城堡，您將領略到不同國家的獨特之處。歡迎預訂我們的套裝行程，開啟一段充滿冒險和文化的旅程。
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="md-w-[50%]">
-            <div class="">
-              <img
-                alt="broken image"
-                title=""
-                class="crop-default lazyloaded"
-                data-description=""
-                data-image-link="javascript:void(0);"
-                width="801"
-                height="801"
-                src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/172126_75537.png"
-                data-src="//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/13224115/172126_75537.png"
-              />
-            </div>
-            <div class="flex flex-col justify-center p-5 md-p-20 bg-slate-200">
-              <div class="text-3xl">歐洲之美盡收眼底</div>
-              <div class="py-4">
-                Mobius Travel
-                的套裝行程讓您盡情探索歐洲之美。從法國的沿海小鎮到德國的童話城堡，您將領略到不同國家的獨特之處。歡迎預訂我們的套裝行程，開啟一段充滿冒險和文化的旅程。
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
     <div class="fixed z-100 bottom-8 right-8">
       <div
@@ -225,7 +239,7 @@
         >
       </div>
     </div>
-		<footer class="pb-20"></footer>
+    <footer class="pb-20"></footer>
   </body>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
