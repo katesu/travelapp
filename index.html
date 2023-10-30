@@ -79,7 +79,7 @@
       src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v18.0"
       nonce="BfZFjRFn"
     ></script>
-    <nav class="fixed w-full" data-aos="fade-up" data-aos-once="false">
+    <nav class="fixed w-full z-100" data-aos="fade-up" data-aos-once="false">
       <div class="hidden md-flex justify-between items-center p-4">
         <h1>
           <img
@@ -90,7 +90,9 @@
         <ul class="flex gap-3">
           <li>主頁</li>
           <li>
-            <a href="./pages/news.html">最新公告<span class="text-red font-bold">New</span></a>
+            <a href="./pages/news.html"
+              >最新公告<span class="text-red font-bold">New</span></a
+            >
           </li>
         </ul>
       </div>
@@ -98,7 +100,7 @@
         <h1><b>Mobius Travel</b></h1>
         <ul class="flex gap-3">
           <li>
-            <a href="./pages/news.html">最新公告<span class="text-red font-bold">New</span></a>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.1/signalr.min.js"></script>
           </li>
         </ul>
 
@@ -114,8 +116,16 @@
     </nav>
     <main class="">
       <section
-        class="slide1 w-screen h-screen text-center text-white flex flex-col justify-center"
+        class="slide1 w-screen h-screen text-center text-white flex flex-col justify-center relative"
       >
+        <div class="absolute w-full top-30 py-5 text-3xl bg-gray-600/75">
+          <a href="./pages/news.html" class=""
+            >受法蘭克福罷工影響，詳情請查閱<span class="text-red"
+              ><b>最新公告</b></span
+            ></a
+          >
+        </div>
+
         <div>
           <h2 class="font-bold text-5xl">暢遊聖米歇爾山與新天鵝堡</h2>
           <div class="text-xl py-6">
@@ -123,7 +133,7 @@
           </div>
           <a
             href="./app-release.apk"
-            class="rounded-full py-3 px-4 border-3 border-white border-solid"
+            class="rounded-full py-3 px-4 border-3 border-white border-solid inline-block"
             onclick="_paq.push(['trackEvent', 'Button', 'Click', 'AppDownload']);"
             ><strong>下載 Android APP</strong></a
           >
